@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+      <link rel="icon" href="img/logo.png">
+
+   <title>Portfolio</title>
+   <!-- HEADER JS Y CSS -->
+   <script defer src="./components/header.js"></script>
+   <link rel="stylesheet" href="./components/header.css">
+
+   <!-- FOOTER JS Y CSS -->
+   <script defer src="./components/footer.js"></script>
+   <link rel="stylesheet" href="./components/footer.css">
+
+
+   <link rel="stylesheet" href="./pages/portfolio.css">
+   <script defer src="./pages/portfolio.js"></script>
+
+</head>
+<body>
+   <!-- AGREGO HEADER CON JS -->
+   <div class="contenedor-header"></div>
+
+   <div class="welcome__portfolio">
+      <h1 class="welcome__portfolio-title">Portfolio</h1>
+   </div>
+
+   <section class="portfolio">
+
+      <div class="portfolio__container">
+      <!-- template here -->
+      <template id="portfolio-template">
+
+         <div class="portfolio__container-general">
+            <img src="./img/computador.png"class="portfolio__container-img">
+            <h2 class="portfolio__container-subtitle">Desafio mod1</h2>
+            <p class="portfolio__container-text">Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales vehicula velit. Aenean lobortis posuere tristique.</p>
+            <a class="portfolio-link" href="https://gist.github.com/Miqueas-dev/a8e1264d369371b2bebb4852b0c2b317" target="_blank">Ver Aquí</a>
+         </div>
+
+      </template>
+   </div>
+   </section>
+   <!-- AGREGO FOOTER CON JS -->
+   <div class="contenedor-footer"></div>
+</body>
+</html>

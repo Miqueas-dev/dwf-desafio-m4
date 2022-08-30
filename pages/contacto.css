@@ -1,0 +1,37 @@
+*{
+   box-sizing: border-box;
+}
+body{
+   padding: 0px;
+   margin: 0px;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center center;
+   background-size: cover;
+   background-color: rgba(0, 0, 0, 1);
+
+}
+
+@media (min-width:959px){
+   body{
+      background-image: url("/img/background-image.png");
+   }
+   .form{
+      background:none ;
+   }
+   .form__container{
+      margin: 10px;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.1);
+      box-shadow: 5px 5px 30px rgba(5, 5, 3, 0.8);
+      padding: 30px;
+   }
+   .form__container-form-input {
+      border: solid 2px;
+      border-radius: 6px;
+   }
+   textarea{
+      border: solid 2px;
+      border-radius: 6px;
+   }
+}

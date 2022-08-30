@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+   <link rel="icon" href="img/logo.png">
+
+   
+   <!-- HEADER JS y CSS -->
+   <script defer src="./components/header.js"></script>
+   <link rel="stylesheet" href="./components/header.css">
+   
+   <!-- FORM JS Y CSS -->
+   <script defer src="./components/form.js"></script>
+   <link rel="stylesheet" href="./components/form.css">
+   
+   <!-- FOOTER JS Y CSS -->
+   <script defer src="./components/footer.js"></script>
+   <link rel="stylesheet" href="./components/footer.css">
+
+   <title>Home</title>
+   
+   <!-- INDEX JS Y CSS -->
+   <script defer src="./pages/index.js"></script>
+   <link rel="stylesheet" href="./pages/index.css">
+   
+</head>
+<body>
+   <!-- AGREGO HEADER CON JS -->
+   <div class="header-div"></div>
+
+   <section class="welcome">
+      <!-- Template welcome Contentful -->
+      <template id="welcome-template">
+         <h1 class="welcome__title tipado">Hola <br> soy Miqueas</h1>
+      </template>
+
+      </section>
+      
+   <section class="presentation">
+      <!-- Template presentation Contentful -->
+      <template id="template-presentation">
+
+         <div class="presentation__container">
+            <img src="./img/img-quien-soy.png" alt="" class="presentation__img">
+            <div class="presentation__container-text">
+               <h1 class="presentation__title">Soy Miqueas</h1>
+               <p class="presentation__text">Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales vehicula velit. Aenean lobortis posuere tristique. Phasellus placerat arcu elementum nisi ultrices cursus. Etiam sit amet aliquet lacus. Integer ut iaculis augue, sit amet tincidunt ex. In eleifend justo et sodales semper. Mauris nec tortor lectus. Curabitur nec ultricies dolor.</p>
+            </div>
+         </div>
+
+      </template>
+   </section>
+   <section class="my-services">
+         
+         <div class="my-services__title">
+            <h2 class="my-services__container-title">Mis Servicios</h2>
+         </div>
+         <!-- Template my services Contentful -->
+         <div class="my-services__container-general">
+         <template id="template-myservices">
+            <div class="my-services__container">
+               <img src="./img/computador.png"class="my-services__container-img">
+               <h2 class="my-services__container-subtitle">Hago Cosas</h2>
+               <p class="my-services__container-text">Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales vehicula velit. Aenean lobortis posuere tristique.</p>
+            </div>
+         </template>
+      </div>
+
+   </section>
+      <!-- AGREGO FORM CON JS -->
+   <div class="form-div"></div>
+
+   <!-- AGREGO FOOTER CON JS -->
+   <div class="footer-div"></div>
+
+</body>
+</html>

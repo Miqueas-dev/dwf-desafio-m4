@@ -1,0 +1,133 @@
+ /* HEADER */
+ *{
+   box-sizing: border-box;
+}
+
+.header__container{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin: 5px;
+}
+
+.header__logo{
+   width: 110px;
+   height: 101px;
+   margin: 5px;
+   cursor: pointer;
+}
+/* menu burguer animado */
+.bars__menu{
+   width: 30px;
+   height: 30px;
+   transform: translate(-50%,-50%);
+   cursor: pointer;
+   z-index: 1;
+}
+
+.nav-menu{
+   display: none;
+}
+
+@media (min-width:959px){
+   .bars__menu{
+      display: none;
+   }
+   .nav-menu{
+      display: flex;
+      margin-right: 30px;
+   }
+   .header__container-navs > a{
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: 24px;
+      margin: 15px;
+      font-family: 'Montserrat', sans-serif;
+   }
+   .header__container-navs > a:hover{
+   background-color: #ffffff;
+   transition:0.5s ;
+   font-size: 26px;
+   color: #000000;
+   border-radius:6px;
+   padding: 7px;
+   }
+}
+
+.bars__menu span{
+   display: block;
+   width: 100%;
+   height: 2px;
+   background: #FFFFFF;
+   margin-top: 6px;
+   transform-origin: 0px 100%;
+   transition: all 300ms;
+}
+
+.activeline1__bars-menu{
+   transform: rotate(45deg) translate(-2px,1px);
+}
+
+.activeline2__bars-menu{
+   opacity: 0;
+   margin-left: -30px;
+}
+
+.activeline3__bars-menu{
+   transform: rotate(-45deg) translate(-4px,2px);
+   
+}
+
+/* contenedor port services desplegable */
+.header__container-content{
+   flex-direction: column;
+   position: absolute;
+   width: 100%;
+   height: 663px;
+   top: 0;
+   left: 0;
+   background-color: #141414;
+   transition: all .3s ease;
+   z-index: 0;
+}
+
+@media (min-width:959px){
+   .header__container-content{
+      display: none;
+   }
+}
+
+/* agregar en js */
+.active{
+   transform: translate(-2800px);
+
+
+
+/* se desplaza hacia la derecha   transform: translate(2000px, 1000px); */
+
+}
+.header__container-content-nav{
+   display: flex;
+   flex-direction: column;
+   margin: 200px 66px;
+   align-items: center;
+   text-align: center;
+}
+
+.link{
+   text-decoration: none;
+   margin-top: 10px;
+   font-size: 48px;
+   color: #FFFFFF;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.link:hover{
+   background-color: rgb(228, 228,228);
+   color:rgb(42,42,42);
+}
+.header__li{
+   margin-top: 20px;
+}
+
+/* HEADER-END */

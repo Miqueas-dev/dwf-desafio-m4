@@ -1,0 +1,120 @@
+*{
+   box-sizing: border-box;
+}
+body{
+   padding: 0px;
+   margin: 0px;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center center;
+   background-size: cover;
+   background-color: rgba(0, 0, 0, 1);
+
+}
+
+@media (min-width:959px){
+   body{
+      background-image: url("/img/background-image.png");
+   }
+}
+
+@media (min-width:959px){
+   .services__container-title{
+      height: 440px;
+   }
+}
+
+.services{
+   height: 1450px;
+}
+
+@media (min-width:959px){
+   .services{
+      height: 600px;
+      background-color: rgba(3, 4, 3, 0.8);
+      /* margin-bottom: 0; */
+   }
+}
+.services__container-title{
+   margin-top: 80px;
+}
+.services__title{
+   margin: 0;
+   text-align: center;
+   font-size: 48px;
+   color: #FFFFFF;
+   letter-spacing: 2px;
+   font-family: 'Montserrat', sans-serif;
+}
+
+@media (min-width:959px){
+   .services__title{
+      text-align: start;
+      margin-top: 200px;
+      margin-left: 80px;
+
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 5px solid black;
+      width: 9.2ch;
+      animation: typing 2s steps(21) infinite alternate, blink 5s infinite;
+      }
+      @keyframes typing{
+         from{
+            width: 0;
+         }
+      }
+      @keyframes blink{
+         50%{
+            border-color: transparent;
+         }
+      
+   }
+}
+
+.services__container-general{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   align-items: center;
+   gap: 50px;
+   margin: 80px 42px;
+}
+
+@media (min-width:959px){
+   .services__container-general{
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0 30px;
+      place-items: flex-start;
+   }
+}
+
+.services__container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   width: 300px;
+}
+
+@media (min-width:959px){
+   .services__container{
+      width: 310px;
+      margin-top: 80px;
+   }
+}
+
+.services__container-subtitle{
+   color: #DBDBDB;
+   font-size: 24px;
+   font-family: 'Poppins', sans-serif;
+}
+
+.services__container-text{
+   color: #DBDBDB;
+   font-size: 16px;
+   font-family: 'Poppins', sans-serif;
+   
+}

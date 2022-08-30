@@ -1,0 +1,50 @@
+/* footer  */
+*{
+   box-sizing: border-box;
+}
+.footer-container{
+   height: 500px;
+   background-color: #2C2C2C;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+@media (min-width:959px){
+   .footer-container{
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 80px;
+   }
+}
+
+.personal-logo{
+   width: 200px;
+   height: 150px;
+}
+
+.nombres-redes{
+   font-size: 20px;
+   color:#DBDBDB;
+   text-decoration: none;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.footer-container__components-redes-links{
+   flex-direction: row-reverse;
+   display: flex;
+   align-items: center;
+}
+
+.footer-container__components-redes{
+   display: flex;
+   flex-direction: column;
+   gap: 14px;
+}
+
+.logo-redes{
+   width: 52px;
+   height: 50px;
+   margin-left: 6px;
+}

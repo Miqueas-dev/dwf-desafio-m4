@@ -14,7 +14,7 @@ body{
 
 @media (min-width:959px){
    body{
-      background-image: url("/img/background-image.png");
+      background-image: url("../img/background-image.png");
    }
 }
 
